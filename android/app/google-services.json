@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1010551522451",
+    "project_id": "matomete-kensaku",
+    "storage_bucket": "matomete-kensaku.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010551522451:android:ab35980f2238cc7db13966",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzt_lIhWpckIW1rZJ8vl0SA4RrFIjZ2fw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
