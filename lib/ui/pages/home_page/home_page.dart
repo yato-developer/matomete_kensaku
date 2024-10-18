@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:matomete_kensaku/pages/components/my_button.dart';
-import 'package:matomete_kensaku/pages/ui/home_page/home_page_controller.dart';
-import 'package:matomete_kensaku/pages/ui/root_page/root_page_controller.dart';
+import 'package:matomete_kensaku/ui/components/my_button.dart';
+import 'package:matomete_kensaku/ui/pages/home_page/home_page_controller.dart';
+import 'package:matomete_kensaku/ui/pages/root_page/root_page_controller.dart';
 import 'package:matomete_kensaku/themes/app_colors.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -125,7 +125,6 @@ class HomePage extends ConsumerWidget {
 
   void _showAddTabDialog(BuildContext context, WidgetRef ref) {
     final newTabNameController = TextEditingController();
-
     showDialog(
       context: context,
       builder: (context) {

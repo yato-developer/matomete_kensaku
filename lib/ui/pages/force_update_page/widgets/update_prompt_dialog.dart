@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:matomete_kensaku/models/enum.dart';
-import 'package:matomete_kensaku/pages/ui/force_update_page/update_request_provider.dart';
+import 'package:matomete_kensaku/ui/pages/force_update_page/update_request_provider.dart';
 import 'package:matomete_kensaku/services/shared_preferences_repository.dart';
 import 'package:url_launcher/url_launcher.dart';
 

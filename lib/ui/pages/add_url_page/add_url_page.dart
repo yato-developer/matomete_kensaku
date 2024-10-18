@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:matomete_kensaku/pages/components/my_button.dart';
-import 'package:matomete_kensaku/pages/ui/add_url_page/add_url_page_controller.dart';
+import 'package:matomete_kensaku/ui/components/my_button.dart';
+import 'package:matomete_kensaku/ui/pages/add_url_page/add_url_page_controller.dart';
 import 'package:matomete_kensaku/themes/app_colors.dart';
 
 class AddUrlPage extends ConsumerWidget {
@@ -112,7 +112,6 @@ class AddUrlPage extends ConsumerWidget {
                               ),
                             );
                           } else {
-                            // Proceed to add item if fields are not empty
                             ref.watch(addUrlPageProvider.notifier).addItemToTab(
                                   currentTabIndex,
                                   titleController.text,

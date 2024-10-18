@@ -29,8 +29,12 @@ mixin _$UpdateInfo {
   /// RemoteConfigが有効になる日時
   DateTime get enabledAt => throw _privateConstructorUsedError;
 
+  /// Serializes this UpdateInfo to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of UpdateInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $UpdateInfoCopyWith<UpdateInfo> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -54,6 +58,8 @@ class _$UpdateInfoCopyWithImpl<$Res, $Val extends UpdateInfo>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of UpdateInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -97,6 +103,8 @@ class __$$UpdateInfoImplCopyWithImpl<$Res>
       _$UpdateInfoImpl _value, $Res Function(_$UpdateInfoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UpdateInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -162,12 +170,14 @@ class _$UpdateInfoImpl implements _UpdateInfo {
                 other.enabledAt == enabledAt));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, latestVersion, requiredVersion, enabledAt);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of UpdateInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$UpdateInfoImplCopyWith<_$UpdateInfoImpl> get copyWith =>
@@ -190,20 +200,22 @@ abstract class _UpdateInfo implements UpdateInfo {
   factory _UpdateInfo.fromJson(Map<String, dynamic> json) =
       _$UpdateInfoImpl.fromJson;
 
-  @override
-
   /// 要求バージョン（任意）
-  String get latestVersion;
   @override
+  String get latestVersion;
 
   /// 要求バージョン（強制）
-  String get requiredVersion;
   @override
+  String get requiredVersion;
 
   /// RemoteConfigが有効になる日時
-  DateTime get enabledAt;
   @override
-  @JsonKey(ignore: true)
+  DateTime get enabledAt;
+
+  /// Create a copy of UpdateInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$UpdateInfoImplCopyWith<_$UpdateInfoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

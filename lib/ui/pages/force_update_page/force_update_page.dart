@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:matomete_kensaku/models/enum.dart';
-import 'package:matomete_kensaku/pages/ui/force_update_page/widgets/update_prompt_dialog.dart';
-import 'package:matomete_kensaku/pages/ui/force_update_page/update_request_provider.dart';
-import 'package:matomete_kensaku/pages/ui/root_page/root_page.dart';
+import 'package:matomete_kensaku/ui/pages/force_update_page/widgets/update_prompt_dialog.dart';
+import 'package:matomete_kensaku/ui/pages/force_update_page/update_request_provider.dart';
+import 'package:matomete_kensaku/ui/pages/root_page/root_page.dart';
 
 class ForceUpdatePage extends ConsumerWidget {
   const ForceUpdatePage({

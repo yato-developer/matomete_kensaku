@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:matomete_kensaku/models/src/tab.dart';
+import 'package:matomete_kensaku/models/src/category_tab.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CategoryTabService {

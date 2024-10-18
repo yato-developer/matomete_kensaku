@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:matomete_kensaku/models/enum.dart';
 import 'package:matomete_kensaku/models/src/update_info.dart';
-import 'package:matomete_kensaku/pages/ui/force_update_page/remote_config_provider.dart';
+import 'package:matomete_kensaku/ui/pages/force_update_page/remote_config_provider.dart';
 import 'package:matomete_kensaku/services/shared_preferences_repository.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:version/version.dart';

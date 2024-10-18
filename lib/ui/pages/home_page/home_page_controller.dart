@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:matomete_kensaku/models/src/tab.dart';
+import 'package:matomete_kensaku/models/src/category_tab.dart';
 import 'package:matomete_kensaku/services/tab_service.dart';
 
 part 'home_page_controller.freezed.dart';

@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'tab.freezed.dart';
-part 'tab.g.dart';
+part 'category_tab.freezed.dart';
+part 'category_tab.g.dart';
 
 @freezed
 class CategoryTab with _$CategoryTab {
