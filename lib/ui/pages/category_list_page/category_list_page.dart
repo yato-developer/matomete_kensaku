@@ -17,19 +17,25 @@ class CategoryListPage extends StatelessWidget {
       body: ListView.builder(
           itemCount: CategoryType.values.length,
           itemBuilder: (context, index) {
-            //return Text(CategoryType.values[index].displayStatus());
-            return ListTile(
-              title: Text(CategoryType.values[index].displayStatus()),
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                      builder: (context) => FetchsUrlPage(
-                          currentTabIndex: 0,
-                          category: CategoryType.values[index].name,
-                          categoryTitle:
-                              CategoryType.values[index].displayStatus())),
-                );
-              },
+            return Column(
+              children: [
+                ListTile(
+                  title: Text(CategoryType.values[index].displayStatus()),
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                          builder: (context) => FetchsUrlPage(
+                              currentTabIndex: 0,
+                              category: CategoryType.values[index].name,
+                              categoryTitle:
+                                  CategoryType.values[index].displayStatus())),
+                    );
+                  },
+                ),
+                Divider(
+                  height: 1,
+                )
+              ],
             );
           }),
     );

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:matomete_kensaku/ui/components/my_button.dart';
 import 'package:matomete_kensaku/ui/pages/add_url_page/add_url_page.dart';
 import 'package:matomete_kensaku/ui/pages/category_list_page/category_list_page.dart';
-import 'package:matomete_kensaku/ui/pages/fetch_url_page/fetch_url_page.dart';
 import 'package:matomete_kensaku/ui/pages/home_page/home_page.dart';
 import 'package:matomete_kensaku/ui/pages/root_page/root_page_controller.dart';
 import 'package:matomete_kensaku/ui/pages/setting_page/setting_page.dart';
@@ -46,33 +46,34 @@ class RootPage extends ConsumerWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
                         const Text(
-                          'URLを追加',
+                          'URLを追加する',
                           style: TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                         const SizedBox(height: 20),
-                        ElevatedButton(
+                        MyButton(
                             onPressed: () {
                               Navigator.of(context).pop();
                               Navigator.of(context).push(
                                 MaterialPageRoute(
-                                    builder: (context) => AddUrlPage(currentTabIndex: 0,)),
+                                    builder: (context) => AddUrlPage(
+                                          currentTabIndex: 0,
+                                        )),
                               );
                             },
-                            child: Text("自分でURLを追加")),
+                            title: "自分でURLを追加"),
                         const SizedBox(height: 20),
-                        ElevatedButton(
-                          onPressed: () {
-                            Navigator.of(context).pop();
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                  builder: (context) => CategoryListPage()),
-                            );
-                          },
-                          child: const Text('URLを探す'),
-                        ),
+                        MyButton(
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                    builder: (context) => CategoryListPage()),
+                              );
+                            },
+                            title: 'URLを探す'),
                       ],
                     ),
                   ),

@@ -9,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.yato.matometeKensaku</string>
+	<string>com.example.matometeKensaku.RunnerTests</string>
 	<key>PROJECT_ID</key>
 	<string>matomete-kensaku</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1010551522451:ios:398a77d4f9e2f310b13966</string>
+	<string>1:1010551522451:ios:92bb91071d5d0cf1b13966</string>
 </dict>
 </plist>

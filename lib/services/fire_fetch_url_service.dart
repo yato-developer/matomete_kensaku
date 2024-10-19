@@ -6,10 +6,9 @@ class FireFetchUrlService {
 
   Future<List<LinkInfo>> fetchUrlRequest(String category) async {
     final snapshot = await _fireStore.collection('category/v1/$category').get();
-
     final urls = snapshot.docs.map((e) => LinkInfo.fromJson(e.data())).toList();
-
-    print(urls);
     return urls;
   }
+
+
 }

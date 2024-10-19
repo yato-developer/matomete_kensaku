@@ -20,13 +20,8 @@ UpdateInfo _$UpdateInfoFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$UpdateInfo {
-  /// 要求バージョン（任意）
   String get latestVersion => throw _privateConstructorUsedError;
-
-  /// 要求バージョン（強制）
   String get requiredVersion => throw _privateConstructorUsedError;
-
-  /// RemoteConfigが有効になる日時
   DateTime get enabledAt => throw _privateConstructorUsedError;
 
   /// Serializes this UpdateInfo to a JSON map.
@@ -140,15 +135,10 @@ class _$UpdateInfoImpl implements _UpdateInfo {
   factory _$UpdateInfoImpl.fromJson(Map<String, dynamic> json) =>
       _$$UpdateInfoImplFromJson(json);
 
-  /// 要求バージョン（任意）
   @override
   final String latestVersion;
-
-  /// 要求バージョン（強制）
   @override
   final String requiredVersion;
-
-  /// RemoteConfigが有効になる日時
   @override
   final DateTime enabledAt;
 
@@ -200,15 +190,10 @@ abstract class _UpdateInfo implements UpdateInfo {
   factory _UpdateInfo.fromJson(Map<String, dynamic> json) =
       _$UpdateInfoImpl.fromJson;
 
-  /// 要求バージョン（任意）
   @override
   String get latestVersion;
-
-  /// 要求バージョン（強制）
   @override
   String get requiredVersion;
-
-  /// RemoteConfigが有効になる日時
   @override
   DateTime get enabledAt;
 
